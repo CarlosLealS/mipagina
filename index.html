@@ -26,7 +26,7 @@
             margin: 0 auto;
         }
         .hero {
-            background-image: url('imagenes/imagen.jpg');
+            background-image: url('imagen1.jpg');
             background-size: cover;
             background-position: center;
             color: #fff;
@@ -62,6 +62,16 @@
             max-width: 100%;
             height: auto;
         }
+        .characters {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .characters img {
+            max-width: 30%;
+            height: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
         footer {
             background-color: #444;
             color: #fff;
@@ -75,6 +85,10 @@
         @media (max-width: 768px) {
             .content .box {
                 flex: 1 1 100%;
+            }
+            .characters img {
+                max-width: 100%;
+                margin-bottom: 20px;
             }
         }
         a {
@@ -119,7 +133,12 @@
                 </div>
             </section>
             <div class="image-box">
-                <img src="imagenes/imagen2.jpg" alt="Imagen del juego">
+                <img src="imagen2.jpg" alt="Imagen del juego">
+            </div>
+            <div class="characters">
+                <img src="imagen1.jpg" alt="Personaje 1">
+                <img src="imagen2.jpg" alt="Personaje 2">
+                <img src="imagen3.jpg" alt="Personaje 3">
             </div>
         </div>
     </main>
