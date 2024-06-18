@@ -26,7 +26,7 @@
             margin: 0 auto;
         }
         .hero {
-            background-image: url('imagen5.png');
+            background-image: url('imagen1.jpg');
             background-size: cover;
             background-position: center;
             color: #fff;
@@ -71,6 +71,42 @@
             max-width: 30%;
             height: auto;
             box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        .comments-section {
+            background: #222;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        .comments-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .comment-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .comment-form label {
+            font-size: 1.2em;
+        }
+        .comment-form input, .comment-form textarea, .comment-form select {
+            padding: 10px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .comment-form button {
+            padding: 10px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #1e90ff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .comment-form button:hover {
+            background-color: #0066cc;
         }
         footer {
             background-color: #444;
@@ -128,18 +164,39 @@
                     <h2>Descargar</h2>
                     <p>Puedes descargar Samurai's Path Destiny desde las siguientes plataformas:</p>
                     <ul>
-                        <li><a href="0.5.zip" download>PC</a></li>
+                        <li><a href="U.G.D7.zip" download>PC</a></li>
                     </ul>
                 </div>
             </section>
             <div class="image-box">
-                <img src="imagen4.png" alt="Imagen del juego">
+                <img src="imagen2.jpg" alt="Imagen del juego">
             </div>
             <div class="characters">
-                <img src="imagen1.png" alt="Personaje 1">
-                <img src="imagen2.png" alt="Personaje 2">
-                <img src="imagen3.png" alt="Personaje 3">
+                <img src="imagen1.jpg" alt="Personaje 1">
+                <img src="imagen2.jpg" alt="Personaje 2">
+                <img src="imagen3.jpg" alt="Personaje 3">
             </div>
+            <section class="comments-section">
+                <h2>Deja tu comentario</h2>
+                <form class="comment-form">
+                    <label for="name">Nombre (opcional):</label>
+                    <input type="text" id="name" name="name" placeholder="Tu nombre o anónimo">
+                    
+                    <label for="rating">Puntuación:</label>
+                    <select id="rating" name="rating">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    
+                    <label for="comment">Comentario:</label>
+                    <textarea id="comment" name="comment" rows="4" placeholder="Escribe tu comentario aquí..."></textarea>
+                    
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
         </div>
     </main>
     <footer>
