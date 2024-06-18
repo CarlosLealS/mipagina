@@ -85,9 +85,15 @@
             display: flex;
             flex-direction: column;
             gap: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #333;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
         }
         .comment-form label {
-            font-size: 1.2em;
+            font-size: 1em;
         }
         .comment-form input, .comment-form textarea, .comment-form select {
             padding: 10px;
@@ -95,10 +101,12 @@
             border: none;
             border-radius: 5px;
             margin-bottom: 10px;
+            background-color: #444;
+            color: #fff;
         }
         .comment-form button {
             padding: 10px;
-            font-size: 1.2em;
+            font-size: 1em;
             color: #fff;
             background-color: #1e90ff;
             border: none;
@@ -107,6 +115,25 @@
         }
         .comment-form button:hover {
             background-color: #0066cc;
+        }
+        .comments-list {
+            max-width: 600px;
+            margin: 20px auto 0;
+            background: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        .comment {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #444;
+            padding-bottom: 10px;
+        }
+        .comment p {
+            margin: 0;
+        }
+        .comment-name {
+            font-weight: bold;
         }
         footer {
             background-color: #444;
@@ -192,10 +219,33 @@
                     </select>
                     
                     <label for="comment">Comentario:</label>
-                    <textarea id="comment" name="comment" rows="4" placeholder="Escribe tu comentario aquí..."></textarea>
+                    <textarea id="comment" name="comment" rows="2" placeholder="Escribe tu comentario aquí..."></textarea>
                     
                     <button type="submit">Enviar</button>
                 </form>
+                <div class="comments-list">
+                    <h3>Comentarios Recientes</h3>
+                    <div class="comment">
+                        <p class="comment-name">Anónimo 1</p>
+                        <p>¡Gran juego! Me encanta la historia.</p>
+                    </div>
+                    <div class="comment">
+                        <p class="comment-name">Anónimo 2</p>
+                        <p>Los gráficos son impresionantes.</p>
+                    </div>
+                    <div class="comment">
+                        <p class="comment-name">Anónimo 3</p>
+                        <p>¿Cuándo saldrá la próxima actualización?</p>
+                    </div>
+                    <div class="comment">
+                        <p class="comment-name">Anónimo 4</p>
+                        <p>Juego muy divertido, pero el multijugador necesita mejoras.</p>
+                    </div>
+                    <div class="comment">
+                        <p class="comment-name">Anónimo 5</p>
+                        <p>Me gusta mucho, pero es un poco difícil.</p>
+                    </div>
+                </div>
             </section>
         </div>
     </main>
